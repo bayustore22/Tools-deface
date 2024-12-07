@@ -40,12 +40,12 @@ Ikuti langkah-langkah berikut untuk menginstal dan menggunakan tools ini di Term
 
 3. **Clone Repository Tools Deface**:
    ```bash
-   git clone https://github.com/wanzxploit/tools-deface
+   git clone https://github.com/wanzxploit/Tools-deface
    ```
 
 4. **Pindah ke Direktori Tools**:
    ```bash
-   cd tools-deface
+   cd Tools-deface
    ```
 
 5. **Instal Dependensi Python**:
