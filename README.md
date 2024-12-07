@@ -1,5 +1,7 @@
 # T-DEF - TOOLS DEFACE
 
+![Logo T-DEF](https://raw.githubusercontent.com/wanzxploit/Tools-deface/refs/heads/main/dev.png)
+
 ## Deskripsi
 
 **T-DEF** adalah tools berbasis Python yang dirancang untuk melakukan deface website dengan efisiensi dan kemudahan. Dikembangkan oleh **Wanz Xploit**, tools ini menawarkan dua mode operasi utama:
