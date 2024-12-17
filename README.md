@@ -1,173 +1,127 @@
-# T-DEF - TOOLS DEFACE
+# T-DEF: Tools Auto Deface 🌐🔧
 
-![Logo T-DEF](https://raw.githubusercontent.com/wanzxploit/Tools-deface/refs/heads/main/banner.png)
+![T-DEF Banner](https://raw.githubusercontent.com/wanzxploit/Tools-deface/refs/heads/main/banner.png)
 
-## Description
+## 🚨 Critical Legal and Ethical Warning
 
-**T-DEF** is a Python-based tool designed to deface websites with efficiency and ease. Developed by **Wanz Xploit**, this tool offers two main operating modes:
+⚠️ **IMPORTANT: This tool is strictly for educational and research purposes only**
 
-1. **Single Deface**: Uploading a script file to a single target directly.
-2. **Multi Deface**: Uploading a script file to multiple targets at once, listed in the `target.txt` file.
+- 🛑 **Unauthorized website modification is ILLEGAL**
+- 🏛️ Unauthorized access to websites violates computer crime laws
+- 🔒 Always obtain explicit written permission before ANY testing
+- 📝 Misuse can result in severe legal consequences
 
-This tool is equipped with an attractive interface, dynamic banners, loading effects, and a result table for the deface report.
+**Developers and Contributors are NOT responsible for misuse**
 
----
+## 📝 Project Description
 
-## Main Features
+**T-DEF** is a Python-based research tool demonstrating web vulnerability assessment, featuring two primary operational modes:
 
-- **URL Validation**: Ensures the target URL starts with `http://` or `https://`.
-- **Automatic File Check**: Verifies the existence of the HTML file to be uploaded.
-- **Remove Duplicates**: In multi-mode, the tool automatically removes duplicate targets from the list.
-- **Loading Animation**: Provides a more interactive user experience.
-- **Result Table**: Displays the upload status for each target (success/failed).
-- **Local IP Address**: Displayed to help identify the network.
+- 🎯 **Single Target Mode**: Upload script to a single website
+- 🌐 **Multi-Target Mode**: Batch upload scripts to multiple websites
 
----
+## ⚠️ Target.txt Historical Notice
 
-## Installation Guide for Termux
+🕰️ **CRITICAL INFORMATION ABOUT target.txt**:
+- This file has remained unchanged since 2019
+- Most URLs are likely:
+  - Inactive
+  - No longer valid
+  - Potentially secured
+- **STRONGLY RECOMMENDED**: 
+  - Manually verify ALL URLs
+  - Update target list before any research
+  - Remove non-functional websites
 
-Follow these steps to install and use this tool on Termux:
+## ✨ Key Features
 
-1. **Update and Upgrade Termux Packages**:
-   ```bash
-   pkg update && pkg upgrade
+- 🔗 Automatic URL validation
+- 📂 File existence checking
+- 🧹 Duplicate target removal
+- 🎬 Interactive loading animations
+- 📊 Comprehensive upload status reporting
+- 🌍 Local IP address display
 
-2. Install Git and Python:
+## 🚀 System Requirements
 
+- Python 3.7+
+- Termux (for Android users)
+- Stable internet connection
+
+## 🛠 Installation
+
+### Termux Setup
+
+```bash
+# Update packages
+pkg update && pkg upgrade
+
+# Install dependencies
 pkg install git python -y
 
-
-3. Clone the Tools Deface Repository:
-
+# Clone repository
 git clone https://github.com/wanzxploit/Tools-deface
-
-
-4. Navigate to the Tools Directory:
-
 cd Tools-deface
 
-
-5. Install Python Dependencies:
-
+# Install Python dependencies
 pip install -r requirements.txt
+```
 
+## 🖥 Usage Guide
 
-6. Prepare Files:
+### Single Target Mode
 
-target.txt File: Create a target.txt file for multi-mode with a list of URLs (one URL per line). This file should be placed in the tools directory.
-
-HTML Script File: Place the HTML script file you wish to upload (e.g., deface.html) in the same directory as the tools. The file name should match the input you will enter when running the tool.
-
-
-
-
-
----
-
-Usage Guide
-
-1. Run the Tool:
-
+1. Run the tool:
+```bash
 make install
 make run
+```
 
+2. Select mode 1 (Single Target)
+3. Enter HTML filename
+4. Provide target URL
 
-2. Select the Operating Mode:
+### Multi-Target Mode
 
-Type 1 for Single Deface.
+1. Prepare `target.txt` with verified URLs
+2. Run the tool
+3. Select mode 2 (Multi-Target)
+4. Enter HTML filename
 
-Type 2 for Multi Deface.
+## 📊 System Workflow
 
+- ✅ URL Validation
+- 🕵️ File Verification
+- 🚀 Upload Process
+- 📋 Result Reporting
 
+## 🔍 Ethical Research Principles
 
-3. Enter Input:
+🤝 **Responsible Disclosure Guidelines**:
+- Always inform website owners
+- Document vulnerabilities professionally
+- Never cause intentional damage
+- Respect digital boundaries
+- Follow responsible security research ethics
 
-For single mode:
+## 👤 Developer Contact
 
-Enter the name of the HTML file (e.g., deface.html).
+- **Instagram**: reyzroam
+- **YouTube**: Wanz Xploit
+- **GitHub**: wanzxploit
 
-Enter the target URL.
+## 📄 License
 
+Released under MIT License. For educational purposes only.
 
-For multi mode:
+## 🤝 Contribution
 
-Ensure the target URLs are listed in the target.txt.
-
-Enter the name of the HTML file to be uploaded.
-
-
-
-
-4. Review the Results: The tool will display a result table with the status of each target upload (success/failed).
-
-
-
-
----
-
-System Workflow Explanation
-
-1. Single Deface:
-
-Validates the entered URL.
-
-Checks the existence of the HTML file.
-
-Uploads the file to the target and provides the status report.
-
-
-
-2. Multi Deface:
-
-Reads the list of URLs from the target.txt file.
-
-Automatically removes duplicate URLs.
-
-Uploads the file to each target and records the result.
-
-
-
-3. Result Table:
-
-Displays a neatly formatted report of the upload status for each URL (success/failed).
-
-
-
-
+Interested in ethical cybersecurity research? 
+- Open issues for improvements
+- Submit pull requests
+- Share responsible findings
 
 ---
 
-Important Warning
-
-Responsible Usage: This tool is designed for educational purposes. Any misuse of this tool is the sole responsibility of the user.
-
-Data Backup: If you have authorized access to the target, please back up any data before using this tool.
-
-Legality: Using this tool to attack without permission is illegal and violates the law.
-
-Warning about target.txt: The target.txt file provided has been available since 2019 and has not been updated. Therefore, many URLs in it may no longer function or be relevant. I only update the script periodically and have never updated the target.txt file. It is recommended to verify and update the file as needed.
-
-
-
----
-
-Credits and Contact
-
-Developed by Wanz Xploit.
-
-Instagram: reyzroam
-
-YouTube: Wanz Xploit
-
-GitHub: wanzxploit
-
-
-
----
-
-License
-
-This tool is released under the MIT License. You are free to use it for educational purposes, but please adhere to the rules and regulations.
-
-
-
+**Final Reminder**: Web security is about protection, not exploitation. 
+Use knowledge responsibly. 🛡️
