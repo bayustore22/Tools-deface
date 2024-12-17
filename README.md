@@ -1,6 +1,6 @@
 # T-DEF - TOOLS DEFACE
 
-![Logo T-DEF](https://raw.githubusercontent.com/wanzxploit/Tools-deface/refs/heads/main/dev.png)
+![Logo T-DEF](https://raw.githubusercontent.com/wanzxploit/Tools-deface/refs/heads/main/banner.png)
 
 ## Deskripsi
 
