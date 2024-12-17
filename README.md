@@ -2,6 +2,12 @@
 
 ![T-DEF Banner](https://raw.githubusercontent.com/wanzxploit/Tools-deface/refs/heads/main/banner.png)
 
+![GitHub stars](https://img.shields.io/github/stars/wanzxploit/Tools-deface?style=social)
+![Version](https://img.shields.io/badge/version-3.5-brightgreen)
+![Python](https://img.shields.io/badge/python-3.7+-blue)
+![Platform](https://img.shields.io/badge/platform-linux%20%7C%20termux-lightgrey)
+
+
 ## 🚨 Critical Legal and Ethical Warning
 
 ⚠️ **IMPORTANT: This tool is strictly for educational and research purposes only**
