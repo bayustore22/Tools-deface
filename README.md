@@ -1,122 +1,173 @@
-
 # T-DEF - TOOLS DEFACE
 
 ![Logo T-DEF](https://raw.githubusercontent.com/wanzxploit/Tools-deface/refs/heads/main/banner.png)
 
 ## Description
 
-**T-DEF** is a Python-based tool designed for efficient website defacing with ease. Developed by **Wanz Xploit**, this tool offers two main operation modes:
+**T-DEF** is a Python-based tool designed to deface websites with efficiency and ease. Developed by **Wanz Xploit**, this tool offers two main operating modes:
 
-1. **Single Deface**: Uploads a script file to a single target directly.
-2. **Multi Deface**: Uploads a script file to multiple targets listed in the `target.txt` file.
+1. **Single Deface**: Uploading a script file to a single target directly.
+2. **Multi Deface**: Uploading a script file to multiple targets at once, listed in the `target.txt` file.
 
-This tool is equipped with an attractive UI, dynamic banners, loading effects, and a deface result table.
+This tool is equipped with an attractive interface, dynamic banners, loading effects, and a result table for the deface report.
 
 ---
 
-## Key Features
+## Main Features
 
 - **URL Validation**: Ensures the target URL starts with `http://` or `https://`.
-- **Automatic File Check**: Verifies the existence of the HTML file to upload.
-- **Remove Duplicates**: In multi-mode, automatically removes duplicate targets from the list.
+- **Automatic File Check**: Verifies the existence of the HTML file to be uploaded.
+- **Remove Duplicates**: In multi-mode, the tool automatically removes duplicate targets from the list.
 - **Loading Animation**: Provides a more interactive user experience.
-- **Result Table**: Displays upload status for each target (successful/failed).
-- **Local IP Address**: Displayed for network identification assistance.
+- **Result Table**: Displays the upload status for each target (success/failed).
+- **Local IP Address**: Displayed to help identify the network.
 
 ---
 
-## Installation Instructions
+## Installation Guide for Termux
 
-Follow the steps below to install and use this tool:
+Follow these steps to install and use this tool on Termux:
 
-1. **Clone the Repository**:
+1. **Update and Upgrade Termux Packages**:
    ```bash
-   git clone https://github.com/wanzxploit/Tools-deface
-   cd Tools-deface
-   ```
+   pkg update && pkg upgrade
 
-2. **Install Dependencies**:
-   If `make` is available on your system, you can run:
-   ```bash
-   make install
-   ```
+2. Install Git and Python:
 
-   This will install all necessary dependencies, including Python packages.
+pkg install git python -y
 
-3. **Run the Tool**:
-   After installation, run the tool using the following command:
-   ```bash
-   make run
-   ```
 
-4. **Prepare the Files**:
-   - **File `target.txt`**: Create the `target.txt` file for multi-mode with a list of URLs (one per line). This file should be in the tool's directory.
-   - **HTML Script File**: Place the HTML script file you want to upload (e.g., `deface.html`) in the same directory as the tool. The file name should match the input given when running the tool.
+3. Clone the Tools Deface Repository:
 
----
+git clone https://github.com/wanzxploit/Tools-deface
 
-## Usage Guide
 
-1. **Run the Tool**:
-   ```bash
-   make run
-   ```
+4. Navigate to the Tools Directory:
 
-2. **Select the Operation Mode**:
-   - Type **1** for Single Deface.
-   - Type **2** for Multi Deface.
+cd Tools-deface
 
-3. **Enter the Input**:
-   - For single mode:
-     - Enter the HTML script file name (e.g., `deface.html`).
-     - Enter the target URL.
-   - For multi mode:
-     - Ensure the target URLs are listed in `target.txt`.
-     - Enter the HTML script file to upload.
 
-4. **Review the Results**:
-   The tool will display a table with the results, showing the status of each target (successful/failed).
+5. Install Python Dependencies:
+
+pip install -r requirements.txt
+
+
+6. Prepare Files:
+
+target.txt File: Create a target.txt file for multi-mode with a list of URLs (one URL per line). This file should be placed in the tools directory.
+
+HTML Script File: Place the HTML script file you wish to upload (e.g., deface.html) in the same directory as the tools. The file name should match the input you will enter when running the tool.
+
+
+
+
 
 ---
 
-## How the System Works
+Usage Guide
 
-1. **Single Deface**:
-   - Validates the entered URL.
-   - Checks for the existence of the HTML file.
-   - Uploads the file to the target and provides a status report.
+1. Run the Tool:
 
-2. **Multi Deface**:
-   - Reads target URLs from the `target.txt` file.
-   - Automatically removes duplicates.
-   - Uploads the file to each target and records the results.
+make install
+make run
 
-3. **Result Table**:
-   - Displays the status of each URL's upload, formatted neatly (successful/failed).
+
+2. Select the Operating Mode:
+
+Type 1 for Single Deface.
+
+Type 2 for Multi Deface.
+
+
+
+3. Enter Input:
+
+For single mode:
+
+Enter the name of the HTML file (e.g., deface.html).
+
+Enter the target URL.
+
+
+For multi mode:
+
+Ensure the target URLs are listed in the target.txt.
+
+Enter the name of the HTML file to be uploaded.
+
+
+
+
+4. Review the Results: The tool will display a result table with the status of each target upload (success/failed).
+
+
+
 
 ---
 
-## Important Warning
+System Workflow Explanation
 
-- **Responsible Usage**:
-  This tool is intended for educational purposes. The misuse of this tool is the sole responsibility of the user.
-- **Backup Data**:
-  If you have authorized access to the target, ensure that you back up the data before using this tool.
-- **Legality**:
-  Using this tool to attack without permission is illegal and against the law.
+1. Single Deface:
+
+Validates the entered URL.
+
+Checks the existence of the HTML file.
+
+Uploads the file to the target and provides the status report.
+
+
+
+2. Multi Deface:
+
+Reads the list of URLs from the target.txt file.
+
+Automatically removes duplicate URLs.
+
+Uploads the file to each target and records the result.
+
+
+
+3. Result Table:
+
+Displays a neatly formatted report of the upload status for each URL (success/failed).
+
+
+
+
 
 ---
 
-## Credits and Contact
+Important Warning
 
-Developed by **Wanz Xploit**.
+Responsible Usage: This tool is designed for educational purposes. Any misuse of this tool is the sole responsibility of the user.
 
-- **Instagram**: [reyzroam](https://www.instagram.com/reyzroam/)
-- **YouTube**: [Wanz Xploit](https://www.youtube.com/c/wanzxploit/)
-- **GitHub**: [wanzxploit](https://github.com/wanzxploit)
+Data Backup: If you have authorized access to the target, please back up any data before using this tool.
+
+Legality: Using this tool to attack without permission is illegal and violates the law.
+
+Warning about target.txt: The target.txt file provided has been available since 2019 and has not been updated. Therefore, many URLs in it may no longer function or be relevant. I only update the script periodically and have never updated the target.txt file. It is recommended to verify and update the file as needed.
+
+
 
 ---
 
-## License
+Credits and Contact
 
-This tool is released under the **MIT License**. You are free to use it for educational purposes, but please adhere to all applicable laws and regulations.
+Developed by Wanz Xploit.
+
+Instagram: reyzroam
+
+YouTube: Wanz Xploit
+
+GitHub: wanzxploit
+
+
+
+---
+
+License
+
+This tool is released under the MIT License. You are free to use it for educational purposes, but please adhere to the rules and regulations.
+
+
+
