@@ -1,121 +1,115 @@
+
 # T-DEF - TOOLS DEFACE
 
 ![Logo T-DEF](https://raw.githubusercontent.com/wanzxploit/Tools-deface/refs/heads/main/banner.png)
 
-## Deskripsi
+## Description
 
-**T-DEF** adalah tools berbasis Python yang dirancang untuk melakukan deface website dengan efisiensi dan kemudahan. Dikembangkan oleh **Wanz Xploit**, tools ini menawarkan dua mode operasi utama:
+**T-DEF** is a Python-based tool designed for efficient website defacing with ease. Developed by **Wanz Xploit**, this tool offers two main operation modes:
 
-1. **Deface Tunggal**: Mengunggah file script ke satu target secara langsung.
-2. **Deface Multi**: Mengunggah file script ke banyak target sekaligus, yang tercantum di file `target.txt`.
+1. **Single Deface**: Uploads a script file to a single target directly.
+2. **Multi Deface**: Uploads a script file to multiple targets listed in the `target.txt` file.
 
-Tools ini dilengkapi dengan tampilan menarik, banner dinamis, efek loading, dan tabel laporan hasil deface.
-
----
-
-## Fitur Utama
-
-- **Validasi URL**: Memastikan URL target diawali dengan `http://` atau `https://`.
-- **Pengecekan File Otomatis**: Memverifikasi keberadaan file HTML yang akan diunggah.
-- **Hapus Duplikat**: Di mode multi, tools secara otomatis menghapus target duplikat dari daftar.
-- **Animasi Loading**: Memberikan pengalaman pengguna yang lebih interaktif.
-- **Tabel Hasil**: Menampilkan laporan status upload untuk setiap target (berhasil/gagal).
-- **IP Address Lokal**: Ditampilkan untuk membantu identifikasi jaringan.
+This tool is equipped with an attractive UI, dynamic banners, loading effects, and a deface result table.
 
 ---
 
-## Cara Instalasi di Termux
+## Key Features
 
-Ikuti langkah-langkah berikut untuk menginstal dan menggunakan tools ini di Termux:
+- **URL Validation**: Ensures the target URL starts with `http://` or `https://`.
+- **Automatic File Check**: Verifies the existence of the HTML file to upload.
+- **Remove Duplicates**: In multi-mode, automatically removes duplicate targets from the list.
+- **Loading Animation**: Provides a more interactive user experience.
+- **Result Table**: Displays upload status for each target (successful/failed).
+- **Local IP Address**: Displayed for network identification assistance.
 
-1. **Perbarui dan Tingkatkan Paket Termux**:
-   ```bash
-   pkg update && pkg upgrade
-   ```
+---
 
-2. **Pasang Git dan Python**:
-   ```bash
-   pkg install git python -y
-   ```
+## Installation Instructions
 
-3. **Clone Repository Tools Deface**:
+Follow the steps below to install and use this tool:
+
+1. **Clone the Repository**:
    ```bash
    git clone https://github.com/wanzxploit/Tools-deface
-   ```
-
-4. **Pindah ke Direktori Tools**:
-   ```bash
    cd Tools-deface
    ```
 
-5. **Instal Dependensi Python**:
+2. **Install Dependencies**:
+   If `make` is available on your system, you can run:
    ```bash
-   pip install -r requirements.txt
+   make install
    ```
 
-6. **Persiapkan File**:
-   - **File `target.txt`**:
-     Buat file `target.txt` untuk mode multi dengan format daftar URL (satu URL per baris). File ini harus berada di dalam direktori tools.
-   - **File Script HTML**:
-     Letakkan file script HTML yang akan diunggah (contoh: `deface.html`) di direktori yang sama dengan tools. Nama file harus sesuai dengan input yang akan dimasukkan saat menjalankan tools.
+   This will install all necessary dependencies, including Python packages.
 
----
-
-## Panduan Penggunaan
-
-1. **Jalankan Tools**:
+3. **Run the Tool**:
+   After installation, run the tool using the following command:
    ```bash
-   python dev.py
+   make run
    ```
 
-2. **Pilih Mode Operasi**:
-   - Ketik **1** untuk Deface Tunggal.
-   - Ketik **2** untuk Deface Multi.
-
-3. **Masukkan Input**:
-   - Untuk mode tunggal:
-     - Masukkan nama file HTML (contoh: `deface.html`).
-     - Masukkan URL target.
-   - Untuk mode multi:
-     - Pastikan daftar URL target telah tercantum di `target.txt`.
-     - Masukkan nama file HTML yang akan diunggah.
-
-4. **Tinjau Hasil**:
-   Tools akan menampilkan tabel laporan hasil deface yang mencakup status setiap target (berhasil/gagal).
+4. **Prepare the Files**:
+   - **File `target.txt`**: Create the `target.txt` file for multi-mode with a list of URLs (one per line). This file should be in the tool's directory.
+   - **HTML Script File**: Place the HTML script file you want to upload (e.g., `deface.html`) in the same directory as the tool. The file name should match the input given when running the tool.
 
 ---
 
-## Penjelasan Sistem Kerja
+## Usage Guide
 
-1. **Deface Tunggal**:
-   - Memvalidasi URL yang dimasukkan.
-   - Mengecek keberadaan file HTML.
-   - Mengunggah file ke target dan memberikan laporan status.
+1. **Run the Tool**:
+   ```bash
+   make run
+   ```
 
-2. **Deface Multi**:
-   - Membaca daftar URL dari file `target.txt`.
-   - Menghapus URL duplikat secara otomatis.
-   - Mengunggah file ke setiap target dan mencatat hasilnya.
+2. **Select the Operation Mode**:
+   - Type **1** for Single Deface.
+   - Type **2** for Multi Deface.
 
-3. **Tabel Hasil**:
-   - Menampilkan laporan status upload setiap URL dengan format rapi (berhasil/gagal).
+3. **Enter the Input**:
+   - For single mode:
+     - Enter the HTML script file name (e.g., `deface.html`).
+     - Enter the target URL.
+   - For multi mode:
+     - Ensure the target URLs are listed in `target.txt`.
+     - Enter the HTML script file to upload.
+
+4. **Review the Results**:
+   The tool will display a table with the results, showing the status of each target (successful/failed).
 
 ---
 
-## Peringatan Penting
+## How the System Works
 
-- **Penggunaan yang Bertanggung Jawab**:
-  Tools ini dirancang untuk tujuan edukasi. Penyalahgunaan tools ini adalah tanggung jawab pengguna sepenuhnya.
+1. **Single Deface**:
+   - Validates the entered URL.
+   - Checks for the existence of the HTML file.
+   - Uploads the file to the target and provides a status report.
+
+2. **Multi Deface**:
+   - Reads target URLs from the `target.txt` file.
+   - Automatically removes duplicates.
+   - Uploads the file to each target and records the results.
+
+3. **Result Table**:
+   - Displays the status of each URL's upload, formatted neatly (successful/failed).
+
+---
+
+## Important Warning
+
+- **Responsible Usage**:
+  This tool is intended for educational purposes. The misuse of this tool is the sole responsibility of the user.
 - **Backup Data**:
-  Jika Anda memiliki akses resmi ke target, lakukan backup data sebelum menggunakan tools ini.
-- **Legalitas**:
-  Penggunaan tools ini untuk menyerang tanpa izin adalah tindakan ilegal dan melanggar hukum.
+  If you have authorized access to the target, ensure that you back up the data before using this tool.
+- **Legality**:
+  Using this tool to attack without permission is illegal and against the law.
 
 ---
 
-## Kredit dan Kontak
+## Credits and Contact
 
-Dikembangkan oleh **Wanz Xploit**.
+Developed by **Wanz Xploit**.
 
 - **Instagram**: [reyzroam](https://www.instagram.com/reyzroam/)
 - **YouTube**: [Wanz Xploit](https://www.youtube.com/c/wanzxploit/)
@@ -123,7 +117,6 @@ Dikembangkan oleh **Wanz Xploit**.
 
 ---
 
-## Lisensi
+## License
 
-Tools ini dirilis di bawah **MIT License**. Anda bebas menggunakannya untuk kebutuhan edukasi, namun tetap patuhi aturan dan hukum yang berlaku.
-
+This tool is released under the **MIT License**. You are free to use it for educational purposes, but please adhere to all applicable laws and regulations.
